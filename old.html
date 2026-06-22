@@ -3,151 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shubha Harini R V | Data Scientist</title>
+<title>RV Shubha Harini | AI ML Engineer /Data Scientist</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
 :root{
---bg:#020617;
---card:#0b1220;
---text:#e5e7eb;
---muted:#9ca3af;
---accent:#8b5cf6;
---border:rgba(255,255,255,0.06);
+--bg:#ffffff;
+--card:#f9fafb;
+--text:#111827;
+--muted:#6b7280;
+--accent:#4f46e5;
+--border:#e5e7eb;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Inter',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-  background:radial-gradient(circle at top, #0b1220, #020617);
-  color:var(--text);
-  line-height:1.75;
+background:var(--bg);
+color:var(--text);
+line-height:1.75;
 }
 
 .container{
-  max-width:1200px;
-  margin:auto;
-  padding:5rem 1.2rem;
+max-width:1200px;
+margin:auto;
+padding:4rem 1.2rem;
 }
 
 h2{
-  font-size:2.2rem;
-  margin-bottom:2.6rem;
-  letter-spacing:-0.5px;
+font-size:2.2rem;
+margin-bottom:2.5rem;
+letter-spacing:-0.4px;
 }
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:2.2rem;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:2rem;
 }
 
 .card{
-  background:linear-gradient(180deg,#0b1220,#070d19);
-  border:1px solid var(--border);
-  border-radius:18px;
-  padding:2rem;
-  transition:all .3s ease;
+background:var(--card);
+border:1px solid var(--border);
+border-radius:16px;
+padding:2rem;
+transition:.25s ease;
 }
 
 .card:hover{
-  transform:translateY(-6px);
-  border-color:rgba(139,92,246,0.35);
+transform:translateY(-4px);
+border-color:var(--accent);
 }
 
 .card h4{
-  color:var(--accent);
-  font-size:1.1rem;
-  margin-bottom:.9rem;
+color:var(--accent);
+font-size:1.1rem;
+margin-bottom:.9rem;
 }
 
 .card ul{
-  padding-left:1.2rem;
+padding-left:1.2rem;
 }
 
 .card ul li{
-  margin-bottom:.55rem;
-  color:var(--muted);
-  font-size:.95rem;
+margin-bottom:.55rem;
+color:var(--muted);
+font-size:.95rem;
 }
 
+/* HERO */
 .hero{
-  display:grid;
-  grid-template-columns:240px 1fr;
-  gap:3.5rem;
-  align-items:center;
-  padding-top:7rem;
+display:grid;
+grid-template-columns:240px 1fr;
+gap:3rem;
+align-items:center;
+padding-top:5rem;
 }
 
 .hero img{
-  width:240px;
-  height:240px;
-  border-radius:50%;
-  object-fit:cover;
-  border:4px solid rgba(139,92,246,0.6);
+width:240px;
+height:240px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid var(--accent);
 }
 
 .hero h1{
-  font-size:3.1rem;
-  font-weight:800;
-  letter-spacing:-1px;
+font-size:3rem;
+font-weight:800;
 }
 
 .hero h3{
-  color:var(--accent);
-  font-weight:500;
-  margin:.8rem 0 1.4rem;
+color:var(--accent);
+font-weight:500;
+margin:.8rem 0 1.3rem;
 }
 
 .hero p{
-  color:var(--muted);
-  max-width:820px;
+color:var(--muted);
+max-width:850px;
 }
 
 .contact{
-  margin-top:1.8rem;
-  display:flex;
-  flex-wrap:wrap;
-  gap:1.4rem;
-  font-size:.9rem;
+margin-top:1.6rem;
+display:flex;
+flex-wrap:wrap;
+gap:1.4rem;
+font-size:.9rem;
+}
+
+.contact a{
+color:var(--text);
+text-decoration:none;
 }
 
 .contact i{
-  color:var(--accent);
-  margin-right:6px;
+color:var(--accent);
+margin-right:6px;
 }
 
+/* NAV BUTTONS */
+.nav-buttons{
+margin-top:2rem;
+display:flex;
+flex-wrap:wrap;
+gap:1rem;
+}
+
+.nav-buttons a{
+text-decoration:none;
+background:var(--accent);
+color:#fff;
+padding:10px 20px;
+border-radius:999px;
+font-size:.9rem;
+font-weight:500;
+}
+
+.nav-buttons a:hover{
+background:#4338ca;
+}
+
+/* SKILLS */
 .skills span{
-  display:inline-block;
-  background:rgba(139,92,246,.15);
-  color:var(--accent);
-  padding:7px 16px;
-  border-radius:999px;
-  font-size:.85rem;
-  margin:6px 6px 0 0;
+display:inline-block;
+background:#eef2ff;
+color:var(--accent);
+padding:7px 16px;
+border-radius:999px;
+font-size:.85rem;
+margin:6px 6px 0 0;
 }
 
 footer{
-  text-align:center;
-  color:var(--muted);
-  padding:4rem 1rem;
-  font-size:.85rem;
+text-align:center;
+color:var(--muted);
+padding:4rem 1rem;
+border-top:1px solid var(--border);
+font-size:.85rem;
 }
 
 @media(max-width:768px){
 .hero{
-  grid-template-columns:1fr;
-  text-align:center;
+grid-template-columns:1fr;
+text-align:center;
 }
 .hero img{
-  margin:auto;
+margin:auto;
+}
+.nav-buttons{
+justify-content:center;
 }
 }
 </style>
@@ -157,44 +190,90 @@ footer{
 
 <!-- HERO -->
 <section class="container hero">
-<img src="shubha.jpeg" alt="Shubha Harini R V">
+<img src="shubha.jpeg" alt="RV Shubha Harini">
 <div>
-<h1>Shubha Harini R V</h1>
-<h3>Data Scientist • Machine Learning Engineer • AI Researcher</h3>
+<h1>RV Shubha Harini</h1>
+<h3>Data Scientist • AI ML Engineer • AI Developer</h3>
+
 <p>
-Data Science graduate specializing in Machine Learning, Deep Learning, and Large Language Models.
-Experienced in healthcare AI, intelligent automation, retrieval-augmented systems, and
-research-oriented ML solutions with strong academic and industry exposure.
+Data Science graduate with expertise in Machine Learning, Deep Learning, Large Language Models (LLMs) and AI. Proven experience in intelligent automation, healthcare AI, retrieval-augmented generation (RAG), and research-driven machine learning solutions.
+	Focused on translating advanced ML research into impactful, production-ready solutions.
 </p>
+
 <div class="contact">
-<span><i class="fas fa-phone"></i> +91 9025009229</span>
-<span><i class="fas fa-envelope"></i> shubhaharinirv@gmail.com</span>
-<span><i class="fab fa-linkedin"></i> linkedin.com/in/shubha-harini-rv</span>
-<span><i class="fas fa-map-marker-alt"></i> Coimbatore, India</span>
+<span><i class="fas fa-phone"></i><a href="tel:+919025009229">+91 9025009229</a></span>
+<span><i class="fas fa-envelope"></i><a href="mailto:shubhaharinirv@gmail.com">shubhaharinirv@gmail.com</a></span>
+<span><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/shubha-harini-rv-0335bb303" target="_blank">LinkedIn</a></span>
+<span><i class="fab fa-github"></i><a href="https://github.com/rvshubhaharini" target="_blank">GitHub</a></span>
+<span><i class="fas fa-globe"></i><a href="https://rvshubhaharini.github.io/dw_port/" target="_blank">Portfolio</a></span>
+</div>
+
+<div class="nav-buttons">
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#projects">View Projects</a>
+<a href="#certifications">View Certifications</a>
+<a href="#competencies">View Competencies</a>
+<a href="#participations">View Participations</a>
+<a href="#awards">View Awards</a>
+<a href="#volunteering">View Volunteering</a>
+
 </div>
 </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="container">
+<section class="container" id="experience">
 <h2>Professional Experience</h2>
 <div class="grid">
 
 <div class="card">
-<h4>AI & Data Science Intern — Helyxon Healthcare (Apr 2025 – Jun 2025)</h4>
+<h4>AI & Data Science Intern — Helyxon Healthcare Solutions Pvt Ltd(Apr 2025 – Jun 2025)</h4>
 <ul>
-<li>Developed LLM-based chatbot using Ollama (Gemma) handling 1,000+ healthcare queries</li>
-<li>Built resume parsing pipeline extracting 10+ structured fields using NLP and RAG</li>
-<li>Reduced manual screening workload by over 60%</li>
+<li>Developed LLM-based chatbot using Ollama (Gemma)and Agentic AI using LangChain and LangGraph handling 1,000+ queries</li>
+<li>Built AI resume parsing pipeline extracting 50+ structured fields</li>
+<li>Reduced manual screening workload by 60% making sortlisting easier for any role according to the job description provided
+<div class="skills" style="margin-top:8px;">
+    <span>Agentic AI</span>
+    <span>LLM</span>
+    <span>RAG</span>
+    <span>Python</span>
+    <span>NLP</span>
+    <span>Ollama</span>
+    <span>LangChain</span>
+    <span>LangGraph</span> 
+    <span>Agentic AI</span>
+  </div></li>
+<div style="margin-top:10px;">
+    <a href="https://capstone-project-drab-five.vercel.app/" target="_blank" class="project-link">
+      🔗 Project Link
+    </a>
+  </div>
+
 </ul>
 </div>
 
 <div class="card">
-<h4>Backend Engineer & Team Lead (Intern) — Helyxon Healthcare (Sep 2025 – Mar 2026)</h4>
+<h4>Backend Engineer & Team Lead — Helyxon Healthcare Solutions Pvt Ltd(Sep 2025 – Mar 2026)</h4>
 <ul>
-<li>Architected backend services for enterprise healthcare platforms</li>
-<li>Implemented automated email systems delivering 5,000+ notifications</li>
-<li>Led a 4-member team and resolved 50+ development tickets</li>
+<li>Architected backend services for enterprise platform (100+ users)</li>
+<li>Led a 4-member team in deploying bulk email system delivering 5,000+ automated emails</li>
+<li>Ticket resolving System for 50+ tickets generated at a go
+<div class="skills" style="margin-top:8px;">
+    <span>FastAPI</span>
+    <span>SendGrid & WebHook</span>
+    <span>HTML , CSS and JavaScript</span>
+    <span>Python</span>
+    <span>Flask</span>
+    <span>Celery and Redis</span>
+    <span>MongoDB</span>
+    <span>Render</span>
+  </div></li>
+<div style="margin-top:10px;">
+    <a href="https://mailmate-frontend.vercel.app" target="_blank" class="project-link">
+      🔗 Project Link
+    </a>
+  </div>
 </ul>
 </div>
 
@@ -202,163 +281,594 @@ research-oriented ML solutions with strong academic and industry exposure.
 </section>
 
 <!-- PROJECTS -->
-<section class="container">
+<section class="container" id="projects">
 <h2>Projects & Research</h2>
+
 <div class="grid">
 
-<div class="card">
-<h4>Smart HR Management System</h4>
-<ul>
-<li>Automated resume screening using NLP, LLMs, and ATS parsing</li>
-<li>Reduced recruiter review time by 75%</li>
-</ul>
-</div>
+  
+  <div class="card">
+    <h4>Smart Healthcare Management Platform — Capstone</h4>
+<p class="project-duration">Dec 2025 – Feb 2026</p>
 
-<div class="card">
-<h4>Smart Healthcare Management Platform — Capstone</h4>
-<ul>
-<li>Integrated ML, DL, NLP, OCR, LLMs, and RAG in a full-stack healthcare system</li>
-<li>Disease prediction, medical image analysis, OCR-based records, intelligent chat</li>
-<li>Implemented as internship capstone project</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Reinforcement Learning Path Optimizer</h4>
-<ul>
-<li>Applied Q-learning for optimal routing without classical graph algorithms</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Financial Data Analysis & Churn Prediction</h4>
-<ul>
-<li>Data visualization using Python and Tableau</li>
-<li>ML-based churn prediction on Yahoo Finance data</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Machine Unlearning Framework — Mini Project</h4>
-<ul>
-<li>Selective data removal for privacy-preserving ML models</li>
-<li>Fisher-based and retraining-free unlearning techniques</li>
-<li>Evaluated accuracy and stability after unlearning</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Hybrid Optimization for Intrusion Detection (Journal)</h4>
-<ul>
-<li>Hill climbing, HLO, and swarm optimization for feature selection</li>
-<li>Journal paper communicated</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Prompting Techniques for Mathematical Reasoning</h4>
-<ul>
-<li>Chain-of-Thought vs Few-Shot prompting comparison</li>
-<li>Research paper communicated</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Symptom–Disease Prediction (NLP)</h4>
-<ul>
-<li>Clinical text-based disease prediction models</li>
-<li>Cross-dataset generalization evaluation</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>RAG vs CRAG (Research)</h4>
-<ul>
-<li>Benchmarked retrieval-augmented LLM frameworks</li>
-<li>Conference paper communicated</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Heart Disease & Heart Attack Prediction (IEEE)</h4>
-<ul>
-<li>Feature engineering, preprocessing, SHAP explainability</li>
-<li>Multiple ML models with soft-voting ensemble classifier</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Smart IoT Doorbell Management System</h4>
-<ul>
-<li>IoT-based system with sensors, alerts, and automation</li>
-<li>ML/DL used on collected sensor data</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>UiPath Automation — Web Data Extraction</h4>
-<ul>
-<li>UiPath bots for automated web scraping and transformation</li>
-<li>Eliminated repetitive manual workflows</li>
-</ul>
-</div>
-
-<div class="card">
-<h4>Crawl4AI — Intelligent Web Scraping</h4>
-<ul>
-<li>Dynamic web scraping with pagination handling</li>
-<li>Prepared structured datasets for ML pipelines</li>
-</ul>
-</div>
-
-</div>
-</section>
-
-<!-- PROFILES -->
-<section class="container">
-<h2>Profiles</h2>
-<div class="grid">
-
-<div class="card">
-<h4><i class="fas fa-code"></i> Coding Profiles</h4>
-<ul>
-<li><strong>LeetCode</strong> — SQL & Data Structures practice</li>
-<li><strong>Kaggle</strong> — Intro to ML, Intermediate ML, Python</li>
-</ul>
-</div>
-
-<div class="card">
-<h4><i class="fas fa-briefcase"></i> Professional Profiles</h4>
-<ul>
-<li><strong>GitHub</strong> — ML projects, research code, automation tools</li>
-<li><strong>LinkedIn</strong> — Professional updates & networking</li>
-</ul>
-</div>
-
-</div>
-</section>
-
-<!-- SKILLS -->
-<section class="container">
-<h2>Technical Skills</h2>
+    <ul>
+      <li>Integrated ML, DL, NLP, OCR, LLMs, and RAG in a full-stack system</li>
+      <li>Disease prediction, medical image analysis, intelligent chat</li>
+      <li>Implemented as internship capstone project which is a multi-field project covering Agentic AI flow , LLMs, DL,ML,RAG and software services
 <div class="skills">
-<span>Python</span><span>Java</span><span>PHP</span><span>JavaScript</span>
-<span>SQL</span><span>NoSQL</span><span>HTML</span><span>CSS</span><span>R</span>
-<span>Machine Learning</span><span>Deep Learning</span><span>NLP</span>
-<span>Time Series</span><span>Feature Engineering</span><span>Model Evaluation</span>
-<span>LLMs</span><span>Prompt Engineering</span><span>Embeddings</span>
-<span>RAG</span><span>OCR</span><span>SHAP</span><span>Ensemble Learning</span>
-<span>MySQL</span><span>MongoDB</span><span>Regex</span>
-<span>Power BI</span><span>Tableau</span><span>Excel</span><span>PowerPoint</span>
-<span>Git</span><span>GitHub</span><span>MATLAB</span>
-<span>Apache NetBeans</span><span>Streamlit</span>
-<span>UiPath</span><span>Crawl4AI</span>
+  <span>Agentic AI</span>
+  <span>LLMs</span>
+  <span>RAG</span>
+  <span>Machine Learning</span>
+  <span>Deep Learning</span>
+  <span>NLP</span>
+  <span>OCR</span>
+  <span>Full-Stack Development</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/Final_Capstone_Helyxon.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Reinforcement Learning Path Optimizer</h4>
+<p class="project-duration">July 2025 – Nov 2025</p>
+
+    <ul>
+      <li>Applied Q-learning for optimal routing without classical graph algorithms</li>
+	<li>Applied Proximal Policy Optmization as a next core technique to enable path optimization in urban roads with Q and Double Q learning
+<div class="skills">
+  <span>Reinforcement Learning</span>
+  <span>Q-Learning</span>
+  <span>Double Q-Learning</span>
+  <span>PPO</span>
+  <span>Python</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/rl-pathfinder-pro.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Financial Data Analysis & Churn Prediction</h4>
+<p class="project-duration">Nov 2024 – Jan 2025</p>
+
+    <ul>
+     
+      <li>Machine learning–based churn prediction on Yahoo Finance data</li>
+<li>Time Series based churn prediction using ARIMA models and time series forecasting</li>
+	<li>Data visualization using Python libraries and Tableau
+<div class="skills">
+  <span>Machine Learning</span>
+  <span>Churn Prediction</span>
+  <span>Time Series</span>
+  <span>ARIMA</span>
+  <span>Data Visualization</span>
+  <span>Python</span>
+  <span>Tableau</span>
+  <span>Yahoo Finance</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/churn_prediction.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Machine Unlearning Framework — Mini Project</h4>
+<p class="project-duration">Dec 2025 – Feb 2026</p>
+
+    <ul>
+      <li>Selective unlearning using Fisher-based and SISA models on DL and ML systems, retraining only data shards containing information to be removed</li>
+<li>Evaluated post-unlearning accuracy and stability, integrating Agentic AI to automate the end-to-end workflow from model training to compliant data deletion in a banking system
+<div class="skills">
+  <span>Machine Unlearning</span>
+  <span>SISA</span>
+  <span>Fisher Information</span>
+  <span>Deep Learning</span>
+  <span>Machine Learning</span>
+  <span>Agentic AI</span>
+  <span>Privacy-Preserving AI</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/machine-unlearning-mini-project-.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Hybrid Optimization for Intrusion Detection (Journal)</h4>
+<p class="project-duration">Nov 2025 – Jan 2026</p>
+
+    <ul>
+      <li>Feature selection using HLO, hill climbing, and swarm optimization</li>
+      <li>Using techniques like Union , Intersection and Voting to choose the best classifier and providing generalizability (Journal paper communicated)
+<div class="skills">
+  <span>Cyber Security</span>
+  <span>Feature Selection</span>
+  <span>HLO</span>
+  <span>Hill Climbing</span>
+  <span>Swarm Optimization</span>
+  <span>Ensemble Voting</span>
+  <span>Soft Computing</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/Cyber_Security.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Prompting Techniques for Mathematical Reasoning</h4>
+<p class="project-duration">July 2025 – Nov 2025</p>
+
+    <ul>
+      <li>Compared Chain-of-Thought, Few-Shot, and standard prompting and LLM reasoning for mathematical formulations</li>
+      <li>Research paper communicated based on reasoning performance
+<div class="skills">
+  <span>Prompt Engineering</span>
+  <span>Chain-of-Thought</span>
+  <span>Few-Shot Prompting</span>
+  <span>LLM Reasoning</span>
+  <span>Mathematical Reasoning</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/Prompting_Techniques.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Symptom–Disease Prediction using Clinical Texts (NLP)</h4>
+<p class="project-duration">Dec 2025 – Feb 2026</p>
+
+    <ul>
+      <li>NLP-based disease prediction from clinical symptom descriptions using DL and ML and optimization techniques for feasibility</li>
+      <li>Evaluated generalization across multiple healthcare datasets
+<div class="skills">
+  <span>NLP</span>
+  <span>Clinical Text Mining</span>
+  <span>Deep Learning</span>
+  <span>Machine Learning</span>
+  <span>Optimization Techniques</span>
+  <span>Healthcare AI- BioClinicalBert</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/NLP_symptoms-Disease_Prediction.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+<div class="card">
+  <h4>Deepfake Detection using Deep Learning Models</h4>
+<p class="project-duration">Sep 2025 – Nov 2025</p>
+
+
+  <ul>
+    <li>
+      Designed and implemented a deepfake detection framework using multiple deep learning architectures for image and video-based forgery detection
+    </li>
+    <li>
+      Trained and evaluated CNN-based models,Yolo,LSTM for spatial feature extraction and processing and compared using different metrics.
+      <div class="skills">
+        <span>Deep Learning</span>
+        <span>CNN</span>
+        <span>LSTM</span>
+        <span>YOLO</span>
+        <span>Computer Vision</span>
+        <span>Image Analysis</span>
+        <span>Python</span>
+      </div>
+    </li>
+
+    <div style="margin-top:10px;">
+      <a href="https://github.com/RVShubhaharini/deep_learning.git" 
+         target="_blank" 
+         class="project-link">
+        🔗 GitHub Link
+      </a>
+    </div>
+  </ul>
+</div>
+
+
+  <div class="card">
+  <h4>Retrieval-Augmented Generation (RAG) Chatbot</h4>
+  <p class="project-duration">April 2025 – May 2025</p>
+
+  <ul>
+    <li>
+      Built a document-aware chatbot using RAG techniques with vector search and large language models to generate context-aware responses
+    </li>
+    <li>
+      Implemented document ingestion, embedding creation, and vector indexing (FAISS) for semantic conversational retrieval
+      <div class="skills">
+        <span>RAG</span>
+        <span>Semantic Search</span>
+        <span>FAISS</span>
+        <span>Python</span>
+        <span>LLM Integration</span>
+        <span>StreamLit</span>
+      </div>
+    </li>
+
+    <div style="margin-top:10px;">
+      <a href="https://github.com/RVShubhaharini/Rag-Chatbot.git"
+         target="_blank"
+         class="project-link">
+        🔗 GitHub Link
+      </a>
+    </div>
+  </ul>
+</div>
+
+  <div class="card">
+    <h4>Heart Disease & Heart Attack Prediction (IEEE)</h4>
+<p class="project-duration">Sep 2024 – Feb 2025</p>
+
+    <ul>
+      <li>Feature engineering, EDA, preprocessing, SHAP explainability</li>
+      <li>Multiple ML models with soft-voting ensemble classifier
+<div class="skills">
+  <span>Machine Learning</span>
+  <span>EDA</span>
+  <span>Feature Engineering</span>
+  <span>SHAP</span>
+  <span>Ensemble Learning</span>
+  <span>Healthcare Analytics</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/Heart_Attack_Prediction.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+<div class="card">
+  <h4>AI-Based Timetable Management System</h4>
+<p class="project-duration">Dec 2025 – Feb 2026</p>
+
+  <ul>
+    <li>Built a full-stack timetable management system using a custom Genetic Algorithm for automated, conflict-free scheduling</li>
+<li>Implemented role-based access control, automated substitution handling, and real-time email notifications.
+
+<div class="skills">
+  <span>Genetic Algorithm</span>
+  <span>Optimization</span>
+  <span>Python</span>
+  <span>Flask</span>
+  <span>MongoDB</span>
+  <span>Role-Based Access Control</span>
+  <span>Email Automation</span>
+</div>
+
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/TimeTable_Scheduling_SE.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+  </ul>
+</div>
+
+<div class="card">
+  <h4>Graph Neural Network–Based Learning and Analysis</h4>
+<p class="project-duration">Sep 2024 – Dec 2024</p>
+
+
+  <ul>
+    <li>
+      Implemented Graph Neural Network (GNN) models to learn node-level and graph-level representations </li>
+    <li>
+      Performed graph preprocessing including adjacency matrix construction, feature normalization, and graph-based data transformation.
+     <div class="skills">
+      
+        <span>GNN</span>
+        <span>Graph Theory</span>
+        <span>Node Classification</span>
+        <span>Representation Learning</span>
+        <span>PyTorch</span>
+        <span>Python</span>
+      </div>
+    </li>
+
+    <div style="margin-top:10px;">
+      <a href="https://github.com/RVShubhaharini/Graph_NeuralNetworks.git"
+         target="_blank"
+         class="project-link">
+        🔗 GitHub Link
+      </a>
+    </div>
+  </ul>
+</div>
+
+
+  <div class="card">
+    <h4>Smart IoT Doorbell Management System</h4>
+<p class="project-duration">Dec 2025 – Feb 2026</p>
+
+    <ul>
+      <li>IoT hardware using IR sensors, buzzer alerts, and motor control</li>
+      <li>Automated email notifications on object detection</li>
+      <li>ML/DL models trained on sensor-generated data
+<div class="skills">
+  <span>IoT</span>
+  <span>IR Sensors</span>
+  <span>Motor Control</span>
+  <span>Automation</span>
+  <span>Machine Learning</span>
+  <span>Deep Learning</span>
+  <span>Email Notifications</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/IOT_DoorbellSensor_Project.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>UiPath Automation — Web Data Extraction</h4>
+<p class="project-duration">Jan 2026 – Feb 2026</p>
+
+    <ul>
+      <li>Automated web scraping and structured data extraction</li>
+      <li>Eliminated repetitive manual workflows and implemented automated workflow logic without manual interruptions like mail sending systems and craping contents from websites.
+<div class="skills">
+  <span>RPA</span>
+  <span>Web Scraping</span>
+  <span>Automation</span>
+  <span>Data Extraction</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/UiPath_DataWrangling.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Crawl4AI — Intelligent Web Scraping</h4>
+<p class="project-duration">Jan 2026 – Feb 2026</p>
+
+    <ul>
+      <li>Dynamic scraping with pagination handling </li>
+      <li>Implemented Deep Crawling inside a website and prepared structured datasets for ML pipelines
+<div class="skills">
+  <span>Web Scraping</span>
+  <span>Deep Crawling</span>
+  <span>Pagination Handling</span>
+  <span>Data Engineering</span>
+  <span>Dataset Preparation</span>
+  <span>AI Pipelines</span>
+</div>
+</li>
+<div style="margin-top:10px;">
+    <a href="https://github.com/RVShubhaharini/crawl4AI_deep_crawl.git" target="_blank" class="project-link">
+      🔗 GitHub Link
+    </a>
+  </div>
+    </ul>
+  </div>
+
 </div>
 </section>
+
+
+<!-- TECHNICAL SKILLS -->
+<section class="container" id="skills">
+<h2>Technical Skills</h2>
+
+<div class="grid">
+
+  <div class="card">
+    <h4>Programming Languages</h4>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C & C++ </li>
+      <li>SQL & NoSQL</li>
+      <li>R</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Machine Learning & Artificial Intelligence</h4>
+    <ul>
+      <li>Natural Language Processing (NLP)</li>
+      <li>Deep Learning</li>
+      <li>Time Series Analysis</li>
+      <li>Feature Engineering</li>
+      <li>Model Evaluation & Validation</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Large Language Models (LLMs)</h4>
+    <ul>
+      <li>Ollama (Gemma)</li>
+	<li>Agentic AI -Lang Graph and Lang Chain ideologies</li>
+      <li>Prompt Engineering</li>
+      <li>Embeddings</li>
+      <li>Retrieval Augmented Generation (RAG)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Databases & Data Handling</h4>
+    <ul>
+      <li>MySQL</li>
+	<li>PostgreSql</li>
+	<li>Big Data Analytics(Cassandra , Hadoop , Spark)</li>
+	<li>Apache NetBeans- JSP/Servlet</li>
+      <li>MongoDB</li>
+      <li>Relational Databases (RDBMS)</li>
+      <li>Regex-based Data Extraction</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Visualization & Reporting</h4>
+    <ul>
+      <li>Tableau</li>
+      <li>Microsoft Excel</li>
+      <li>Microsoft PowerPoint</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Tools & Platforms</h4>
+    <ul>
+      <li>Git & GitHub</li>
+	<li>Kaggle , Colab , VS code,Python IDE,Microsoft Azure
+      <li>Apache NetBeans</li>
+      <li>MATLAB</li>
+      <li>SendGrid</li>
+	<li>WebHook</li>
+      <li>Groq API</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+
+
+<!-- CERTIFICATIONS -->
+<section class="container" id="certifications">
+<h2>Certifications</h2>
+
+<div class="grid">
+  <div class="card">
+    <ul>
+      <li><strong>Python for Data Science</strong> — NPTEL</li>
+      <li><strong>Programming with Generative AI</strong> — NPTEL</li>
+      <li><strong>Programming in Java</strong> — NPTEL</li>
+      <li><strong>Data Analysis</strong> — Cognizant</li>
+      <li><strong>Data Visualization</strong> — Cognizant</li>
+      <li><strong>Web Development</strong> — MyCaptain</li>
+      <li><strong>Excel for Data Analysis</strong> — CIR, Amrita Vishwa Vidyapeetham</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+
+<!-- PARTICIPATIONS -->
+<section class="container" id="participations">
+<h2>Participations</h2>
+
+<div class="grid">
+  <div class="card">
+    <ul>
+      <li>
+        <strong>Smart India Hackathon 2024</strong> —  
+        Developed an AI-based road safety solution addressing rural and urban traffic challenges.
+      </li>
+      <li>
+        <strong>Smart India Hackathon 2025</strong> —  
+        Built an AI-driven timetable scheduling system optimizing academic resource allocation.
+      </li>
+      <li>
+        <strong>Code-o-clock 2025</strong> —  
+        Developed an AI Call Intelligence system for smarter partner conversations.
+      </li>
+      
+    </ul>
+  </div>
+</div>
+</section>
+
+
+<!-- VOLUNTEERING -->
+<section class="container" id="volunteering">
+<h2>Volunteering & Social Service</h2>
+
+<div class="grid">
+  <div class="card">
+    <h4>National Social Services (NSS) Volunteer <span style="font-weight:400;">(2023 – 2024)</span></h4>
+    <ul>
+      <li>Participated in rural outreach and student mentoring programs.</li>
+      <li>Contributed to community sanitation and rural cleanliness initiatives.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+
+<!-- CORE COMPETENCIES -->
+<section class="container" id="competencies">
+<h2>Core Competencies</h2>
+
+<div class="skills">
+  <span>Analytical Thinking</span>
+<span>Agentic AI </span>
+<span>Prompt Engineering</span>
+  <span>Problem Solving</span>
+  <span>Team Leadership</span>
+  <span>Communication</span>
+  <span>Research</span>
+  <span>Project Management</span>
+  <span>Model Deployment</span>
+  <span>Data Interpretation</span>
+</div>
+</section>
+
+<!-- AWARDS -->
+<section class="container" id="awards">
+<h2>Awards & Recognitions</h2>
+
+<div class="grid">
+  <div class="card">
+    <ul>
+      <li>
+        Secured <strong>1st Position</strong> in 5th Semester with <strong>9.48 SGPA</strong>.
+        </li>
+      <li>
+        Secured <strong>1st Position</strong> in <strong>NPTEL National Qualfier Exam</strong> overall in the course <strong>Python For Data Science</strong>
+
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+
 
 <footer>
-Designed & built by Shubha Harini R V — Complete Professional Portfolio
+Designed & built by RV Shubha Harini — Professional Portfolio
 </footer>
 
 </body>
 </html>
+
+
+
+
+
